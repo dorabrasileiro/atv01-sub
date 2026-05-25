@@ -2,50 +2,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    border-radius: black;
-    background-color: rgb(255, 255, 255);
-    padding: 80px;
-    border: 2px solid black;
+    width: 220px;
+    height: 340px;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card img{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.card h2{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.card p{
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.card button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .card:hover{
-    background-color: rgb(216, 61, 82);
+    background-color: #ff4a71;
+    color: white;
+    transform: scale(1.05);
 }
 
-#container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 300px;
-    
+.card:hover p{
+    color: white;
 }
 
-button{
-    padding-top: 10px;
-    border-radius: 999px;
-    padding: 10px;
-    width: 200px;
+.card:hover button{
+    background-color: white;
+    color: #ff4a71;
+    color: #ff4a71;
 }
 
-h2{
-    padding-bottom: 20px;
-
+.instagram{
+    background-color: #ff4a71;
+    color: white;
 }
 
-img{
-    width: 80px;
-    padding-bottom: 50px;
+.instagram p{
+    color: white;
 }
-p{
-    padding-bottom: 30px;
+
+.instagram button{
+    background-color: white;
+    color: #ff4f87;
 }
